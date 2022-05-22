@@ -1,5 +1,5 @@
-from django.db import models
 from django.contrib.auth import get_user_model
+from django.db import models
 
 User = get_user_model()
 
@@ -10,8 +10,8 @@ class Item(models.Model):
     price = models.FloatField(verbose_name='Цена')
 
     class Meta:
-        verbose_name = 'Предмет'
-        verbose_name_plural = 'Предметы'
+        verbose_name = 'Товар'
+        verbose_name_plural = 'Товары'
 
     def __str__(self):
         return self.name
